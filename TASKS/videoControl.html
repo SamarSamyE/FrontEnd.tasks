@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Video Control</title>
+</head>
+<body>
+    <video id="vid" width="70%" height="450" style="margin-left: 15%; margin-top: 50px;" poster="Picture1.png">
+      <source src="H.mp4" type="video/mp4">
+    </video>
+    <input type="range" id="timeBar" value="0" min="0" max="284" step="1" style="margin-left:18%;width:63%;height:30px">
+    <span id="duration" style="margin-left:80%">4:44</span>
+    <br/>
+    <div style="margin-left: 35%;">
+      <button id="playbtn" style="font-weight: bold;">Play</button> 
+      <button id="stopbtn" style="font-weight: bold;">Stop</button> 
+      <button id="restart">>></button> 
+      <button id="forwardskip">></button> 
+      <button id="backskip"><</button> 
+      <button id="end"><<</button>
+      <button id="mutebtn" style="font-weight: bold;">Mute</button> 
+    </div>
+    <br/>
+    <span style="font-size: large;font-weight: bold; margin-left: 40%;">Speed: </span>
+    <input type="range" min="0.5" max="16" value="1" id="speed" name="speedvalue">
+    <script src="videoControl.js"></script>
+</body>
+</html>

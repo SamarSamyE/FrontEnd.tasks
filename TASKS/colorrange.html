@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Ranges</title>
+</head>
+<body>
+    <form>
+    Red <input type="range" min="0" max="255" step="2"id="redbar" oninput="changecolor()" style="width:200px;height:20px;position: relative;top:3px;margin-left: 20px;">
+    <br/>
+    Green <input type="range" min="0" max="255" step="2" id="greenbar" oninput="changecolor()" style="width:200px;height:20px; position: relative;top:5px;margin-left: 7px;">
+    <br/>
+    Blue <input type="range" min="0" max="255" step="2" id="bluebar" oninput="changecolor()" style="width:200px;height:20px;position: relative;top:5px;margin-left: 17px;">
+    </form>
+<h1 id="text">
+    change the 3 colors Ranges 
+</h1>
+<script>
+    // to change the color of text 
+    function changecolor(){
+    var Text=document.getElementById("text");
+    var Red=document.getElementById("redbar").value;
+    var Green=document.getElementById("greenbar").value;
+    var Blue=document.getElementById("bluebar").value;
+    Text.style.color = 'rgb(' + Red + ',' + Green + ',' + Blue + ')';
+}
+</script>
+</body>
+</html>

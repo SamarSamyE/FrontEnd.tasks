@@ -1,0 +1,30 @@
+/* Style of hover to blink btn */
+button {
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-left: 500px;
+    margin-top: 20%;
+    cursor: pointer;
+    background-color: aqua;
+}
+/* hover it */
+button:hover {
+    animation-name: myButton;
+    animation-duration: 3s;
+    background-color: plum;
+}
+/* animation */
+@keyframes myButton {
+    25% {
+        background-color: rgb(150, 19, 349);
+        box-shadow: 3px 3px black;
+        
+    }
+    50% {
+        background-color: rgb(80, 80, 90);
+        box-shadow: 3px 3px black;
+        transform: translate(5px, 5px);
+    }
+}
